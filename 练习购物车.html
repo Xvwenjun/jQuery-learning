@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="练习购物车.css">
+    <script src="../jquery.min.js"></script>
+    <script src="练习购物车.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div>全部商品</div>
+        <input type="checkbox" class="select-all"> 全选
+        <span>操作</span>
+        <span>小计</span>
+        <span>数量</span>
+        <span>单价</span>
+        <span>商品</span>
+    </nav>
+
+    <main>
+        <div class="card">
+            <input type="checkbox" class="select">
+            <div class="goods">
+                <img src="upload/p1.jpg">
+                <div class="detail">【5本26.8元】经典儿童文学彩图青少版八十天环游地球中学生语文教学大纲</div>
+            </div>
+            <div class="price">￥12.33</div>
+            <div class="num">
+
+                <a class="num-sub" href="javascript:;">-</a>
+                <input type="text" class="num-sum" value="1"></input>
+                <a class="num-add" href="javascript:;">+</a>
+            </div>
+            <span class="s-sum">￥12.33</span>
+            <a class="operation" href="#">删除</a>
+        </div>
+
+
+        <div class="card">
+            <input type="checkbox" class="select">
+            <div class="goods">
+                <img src="upload/p2.jpg">
+                <div class="detail">【2000张贴纸】贴纸书 3-6岁 贴画儿童 贴画书全套12册 贴画 贴纸儿童 汽</div>
+            </div>
+            <div class="price">￥24.80</div>
+            <div class="num">
+
+                <a class="num-sub" href="javascript:;">-</a>
+                <input type="text" class="num-sum" value="1"></input>
+                <a class="num-add" href="javascript:;">+</a>
+            </div>
+            <span class="s-sum">￥24.80</span>
+            <a class="operation" href="#">删除</a>
+        </div>
+
+
+        <div class="card">
+            <input type="checkbox" class="select">
+            <div class="goods">
+                <img src="upload/p3.jpg">
+                <div class="detail">唐诗三百首+成语故事全2册 一年级课外书 精装注音儿童版 小学生二三年级课外阅读书籍</div>
+            </div>
+            <div class="price">￥29.80</div>
+            <div class="num">
+                <a class="num-sub" href="javascript:;">-</a>
+                <input type="text" class="num-sum" value="1"></input>
+                <a class="num-add" href="javascript:;">+</a>
+            </div>
+            <span class="s-sum">￥29.80</span>
+            <a class="operation" href="#">删除</a>
+        </div>
+
+    </main>
+    <footer>
+        <input type="checkbox" class="select-all"> &nbsp 全选
+        <a href="javascript:;" class="clear-select">删除选中的商品</a>
+        <a href="javascript:;" class="clear-all">清理购物车</a>
+        <a href="javascript:;" class="pay">去结算</a>
+        <div class="sum-price">
+            总价:
+            <i>￥0
+            </i>
+        </div>
+        <span class="all-sum">已选<i>0</i>件商品</span>
+    </footer>
+</body>
+
+</html>
